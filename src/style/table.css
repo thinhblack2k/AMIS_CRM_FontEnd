@@ -1,0 +1,211 @@
+:root {
+    --text-black: #1F2229;
+    --color-row-hover: #f0f2f4;
+    --color-row-focus: #e7ebfd;
+    --color-row-focus-hover: #d0d8f8;
+    --color-row-select: #fbded0!important;
+}
+
+/* table dung chung */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+table thead{
+    height: 40px;
+    box-sizing: border-box;
+}
+
+thead tr th {
+    background-color: #f0f2f4;
+    border-bottom: 1px solid #d3d7de !important;
+    
+}
+
+thead tr th:hover {
+    /* border-right: 1px solid #d3d7de;
+    border-left: 1px solid #d3d7de; */
+}
+tbody tr {
+    border-bottom: 1px solid #d3d7de;
+    height: 40px;
+}
+
+tbody tr:hover {
+    background-color: #f0f2f4;
+}
+
+.sticky-table tr:hover td:first-child, 
+.sticky-table tr:hover td:nth-child(2) {
+    background-color: #f0f2f4;
+}
+
+table th,
+table td {
+    padding: 6.5px 16px;
+    white-space: nowrap;
+    vertical-align: middle;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+table th {
+    font-size: 13px;
+    color: var(--text-black);
+}
+
+/* table sticky custom */
+.sticky-table {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 56px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+.sticky-table thead th{
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    border-top: none;
+}
+
+.sticky-setting {
+    position: relative;
+    width: 36px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.sticky-setting-column {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0 2px 6px #00000052;
+}
+
+.sticky-setting-column:hover {
+    background-color: #d3d7de;
+    border-radius: 50%;
+}
+
+.sticky-table thead th:first-child,
+.sticky-table tbody td:first-child {
+    padding: 0;
+    position: sticky;
+    left: 0;
+    background-color: #fff;
+    border: none;
+   
+}
+
+.sticky-table thead th:nth-child(2),
+.sticky-table tbody td:nth-child(2) {
+    position: sticky;
+    left: 36px;
+    background-color: #fff;
+    padding: 0 0 0 12px;
+    border: none;
+    
+}
+
+.sticky-table thead th:first-child,
+.sticky-table thead th:nth-child(2) {
+    background-color: #f0f2f4;
+    z-index: 100;
+}
+
+/* 2 cột đầu dòng đầu tiên trong body có màu xanh */
+
+/* tbody tr:first-child {
+    background-color: #e7ebfd;
+}
+
+.sticky-table tbody tr:first-child td:first-child,
+.sticky-table tbody tr:first-child td:nth-child(2) {
+    background-color: var(--color-row-focus);
+} */
+
+/* tr.row-checked tr:nth-child(2),
+tr.row-checked  tr:first-child {
+  background-color: #fdefe7 !important;
+}
+
+tr.row-checked:hover tr:nth-child(2),
+tr.row-checked:hover tr:first-child{
+  background-color: #fbded0 !important;
+} */
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text--blue a {
+    color: #0f2fbd;
+    text-decoration: none;
+}
+
+.text--blue:hover {
+    text-decoration: underline;
+}
+
+.text--icon {
+    display: flex;
+    align-items: center;
+}
+
+.table-filter {
+    position: absolute !important;
+    top: 9px;
+    right: 6px;
+    display: none;
+    width: 22px;
+    height: 22px;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.table-filter:hover {
+    border-radius: 50%;
+    background-color: #d3d7de !important;
+}
+
+.sticky-table thead tr th:hover .table-filter {
+    display: flex;
+}
+
+/* icon bút */
+.row-edit {
+    display: none;
+    width: 24px;
+    height: 24px;
+    padding-left: 4px;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.sticky-table tbody tr:hover .row-edit {
+    display: flex;
+}

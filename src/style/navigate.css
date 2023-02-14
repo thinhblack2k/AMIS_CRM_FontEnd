@@ -1,0 +1,59 @@
+.navigate {
+    width: 100%;
+    background-color: white;
+    height: 56px;
+    position: absolute;
+    top: calc(100% - 56px);
+    box-sizing: border-box;
+    border: 1px solid #D3D7DE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    font-size: 13px;
+}
+
+.navigate__left {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigate__right {
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page__list {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 20px 16px;
+}
+
+.navigate__text {
+    display: flex;
+    padding: 4px;
+}
+
+.page__item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.text--bold {
+    font-weight: bold;
+    min-width: 16px;
+    text-align: center;
+}
+
+.page__size {
+    width: 182px;
+    flex-shrink: 0;
+}

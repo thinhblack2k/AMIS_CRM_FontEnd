@@ -1,0 +1,111 @@
+
+/* Data tooltip left */
+
+[data-tooltip-left] {
+    position: relative;
+    
+}
+[data-tooltip-left]::before {
+    content: attr(data-tooltip-left);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    position: absolute;
+    background: #586074;
+    box-shadow: 0 0 10px #d5d5d5;
+    color: #fff;
+    max-width: 250px;
+    border-radius: 4px;
+    top: calc(100% + 10px);
+    right: -15px;
+    font-size: 13px;
+    font-family: Regular;
+    width: max-content;
+    /* opacity: 0;
+    transform: scale(0); */
+    transition: 0.25s ease-in-out;
+    z-index: 999;
+}
+[data-tooltip-left]:hover::before {
+    /* transform: scale(1); 
+    opacity: 1;*/
+    top: calc(100% + 10px);
+    display: flex;
+    z-index: 999;
+}
+
+
+/*Data tooltip center right*/
+[data-tooltip-right] {
+    position: relative;
+    
+}
+[data-tooltip-right]::before {
+    content: attr(data-tooltip-right);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    position: absolute;
+    background: #424857;
+    box-shadow: 0 0 10px #d5d5d5;
+    color: #fff;
+    max-width: 250px;
+    border-radius: 4px;
+    top: calc(100% + 10px);
+    right: calc(50% - 50px);
+    /* Thông số thay đổi */
+
+    font-size: 13px;
+    font-family: Regular;
+    width: max-content;
+    /* opacity: 0;
+    transform: scale(0); */
+    transition: 0.25s ease-in-out;
+    z-index: 999;
+}
+[data-tooltip-right]:hover::before {
+    /* transform: scale(1); 
+    opacity: 1;*/
+    top: calc(100% + 10px);
+    display: flex;
+    z-index: 999;
+}
+
+
+
+/* Datatool tip center */
+[data-tooltip-center] {
+    position: relative;
+    
+}
+[data-tooltip-center]::before {
+    content: attr(data-tooltip-center);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    position: absolute;
+    background: #586074;
+    box-shadow: 0 0 10px #d5d5d5;
+    color: #fff;
+    max-width: 250px;
+    border-radius: 4px;
+    top: calc(100% + 10px);
+    font-size: 13px;
+    font-family: Regular;
+    width: max-content;
+    /* opacity: 0;
+    transform: scale(0); */
+    transition: 0.25s ease-in-out;
+    z-index: 999;
+}
+[data-tooltip-center]:hover::before {
+    /* transform: scale(1); 
+    opacity: 1;*/
+    top: calc(100% + 10px);
+    display: flex;
+    z-index: 999;
+}
+
